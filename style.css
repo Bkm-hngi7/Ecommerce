@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap'); */
+
+body{
+    font-family: 'Bodoni Moda', serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.highlight{
+    color: lightskyblue;
+}
+.btn-colour{
+    background: lightskyblue;
+    color: white;
+}
+
+
+/* Social Media Header */
+#socialmedia li {
+    display: inline;
+    padding: 0;
+    justify-content: center;
+}
+
+.group{
+    display: flex;
+    color: #2f4f4f;
+    margin-top: 20px;
+    padding: 0 20px 0 20px;
+}
+
+/*Header*/
+
+header{
+    background-color: white;
+    color: darkslategray;
+    padding-top: 30px;
+    min-height: 60px;
+    border-bottom: lightblue 3px solid;
+}
+
+header a{
+    color: darkslategray;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header ul{
+    margin: 10px;
+    padding: 0;
+}
+
+header li{
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin:0
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color: lightskyblue;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+/* Showcase */
+#showcase{
+    min-height: 700px;
+    background: linear-gradient(rgba(0, 0, 0, 0.452), rgba(14, 13, 13, 0.493)), url('./img/soeimage.jpg') no-repeat 0;
+    background-size: cover;
+    text-align: left;
+}
+#showcase h1{
+    margin-top: 250px;
+    font-size: 55px;
+    margin-bottom: 15px;
+    color: white;
+}
+#showcase h4{
+    font-size:24px;
+    color: white;
+    margin-bottom: 35px;
+    font-family: 'Playfair Display', serif;  
+}
+nav a#openup{
+    display: none;
+}
+/* Products */
+#products {
+    margin-top: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+#products .card{
+    float: left;
+    text-align: center!important;
+    width: 30%;
+    padding: 20px;
+    margin: 20px;
+    /* border: none; */
+    border-top: turquoise;
+}
+.middle{
+    justify-content: center;
+}
+
+/* Subscribe button */
+#subscribe{
+    padding: 15px;
+    min-height: 400px;
+    text-align: center;
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.452), rgba(14, 13, 13, 0.493)), url('./img/subscribe_bg.jpg') no-repeat 0-150px;
+    background-position: center right;   
+}
+#subscribe h3{
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+#subscribe h4{
+    margin-top: 30px;
+}
+
+#subscribe input[type="email"] {
+    padding: 4px;
+    height: 50px;
+    width: 150px;
+    background-color:transparent;
+    border-color: white;
+}
+/* .btn-colouranor{
+    background-color: transparent;
+    border-color:white;
+    color: white;
+} */
+/* Write media query for this */
+.container-alt{ 
+    width: 50%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* About Us */
+.about {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+
+    /* padding: 50px; */
+}
+#about-us h3{
+    margin-top: 150px;
+}
+#about-us img{
+   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(14, 13, 13, 0.493)), url('./img/aboutus.jpg') no-repeat 0-150px;
+   /* padding: 50px; */
+   margin-top: 100px;
+   margin-left: 50px;
+}
+
+
+/* Contact form */
+#contact-form .container{
+    justify-content: center;
+    margin-top: 100px;
+    width: 50%;
+    /* margin-left: 400px; */
+}
+
+#contact-form h3 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+/* Footer */
+footer{
+    padding:90px;  
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+footer .footers{
+    display: flex;
+}
+.socials li a{
+    color: #ffffff;
+}
+.change::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: white;
+}
+
+/* Media Query */
+@media(max-width: 768px){
+    header #branding,
+    header #socialmedia, 
+    #subscribe h1,
+    #subscribe form,
+    #products .card{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    #showcase{
+        /* width: 100%!important; */
+        height: 50vh!important;
+        background-position: center;
+    }
+
+    #subscribe{
+        /* width: 100%!important; */
+        height: 100%!important;
+        background-position: 70% 50%;
+    }
+
+
+    header{
+        padding-bottom: 20px;
+    }
+    #showcase h1{
+        margin-top: 40px;
+    }
+    #subscribe button, .quote button{
+        display: block;
+        width: 100%;
+    }
+    #subscribe form input[type="email"], .quote input, .quote textarea{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .about{
+        grid-template-columns: 1fr;
+    }
+    footer .row{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 580px) {
+    /* Showcase */
+    .hide-on-small{
+        display: none;
+    }
+    #showcase{
+        height: 50vh;
+    }
+    #showcase .container{
+        margin-top: 15vh;
+    }
+    #showcase h1{
+        font-size: 3rem;
+    }
+    #showcase h4{
+        font-size: 1.5rem;
+    }
+    /* h1{
+        font-size: 2.8em;
+    } */
+    nav{
+        height: auto;
+        border-bottom: 0;
+    }
+    nav ul{
+        display: none;
+        height: auto;
+    }
+    nav li{
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+        background: #333333;
+        border-bottom: 1px solid #555555;
+    }
+    nav a:hover{
+        background: #444444;
+    }
+    nav a#openup:after{
+        content: "|||";
+        transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        top: 20px;
+    }
+    nav a#openup{
+        width: 100%;
+        position: relative;
+    }
+}
